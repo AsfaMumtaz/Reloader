@@ -1,6 +1,8 @@
 ARG BUILDER_IMAGE
 ARG BASE_IMAGE
 
+
+
 # Build the manager binary
 FROM --platform=${BUILDPLATFORM} ${BUILDER_IMAGE:-golang:1.21.9} as builder
 
